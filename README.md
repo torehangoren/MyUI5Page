@@ -1,2 +1,1 @@
-# FirstDrawOpenUI5
-Created with CodeSandbox
+# MyPersonal UI5 Page
