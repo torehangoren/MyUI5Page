@@ -5,7 +5,9 @@
 	xmlns="sap.uxap"
 	xmlns:layout="sap.ui.layout"
 	xmlns:m="sap.m"
-	xmlns:core="sap.ui.core">
+	xmlns:core="sap.ui.core"
+	xmlns:about="GOTO.pageContent.about"
+	xmlns:education="GOTO.pageContent.education">
 	<m:App id="app">
 		<m:Page title="Welcome to My Personal UI5 Page">
 			
@@ -45,7 +47,7 @@
 				</snappedTitleOnMobile>
 
 				<actions>
-					<m:Button icon="sap-icon://pull-down"  text="Download" press="toggleFooter"  tooltip="Download as Word Document"/>
+					<m:Button icon="sap-icon://pull-down"  text="Download" press="onPressDownloadCV"  tooltip="Download as Word Document"/>
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
@@ -62,10 +64,10 @@
 					</layout:VerticalLayout>
 
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
-						<m:Image src="./images/linkedin.png"/>
-						<m:Image src="./images/xing.jpg" class="sapUiSmallMarginBegin"/>
-						<m:Image src="./images/twitter.png" class="sapUiSmallMarginBegin"/>
-						<m:Image src="./images/instagram.png" class="sapUiSmallMarginBegin"/>
+						<m:Image src="./images/linkedin.png" press="onPressLinkedinIcon"/>
+						<m:Image src="./images/xing.jpg" class="sapUiSmallMarginBegin" press="onPressXingIcon"/>
+						<m:Image src="./images/twitter.png" class="sapUiSmallMarginBegin" press="onPressTwitterIcon"/>
+						<m:Image src="./images/instagram.png" class="sapUiSmallMarginBegin" press="onPressInstagramIcon"/>
 					</layout:HorizontalLayout>
 
 				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
@@ -80,34 +82,28 @@
 
 		
 		<sections>
-			<ObjectPageSection titleUppercase="false" id="goalsSection" title="2014 Goals Plan">
+			<ObjectPageSection titleUppercase="false" id="aboutSection" title="About Me">
 				<subSections>
-					<ObjectPageSubSection id="goalsSectionSS1">
+					<ObjectPageSubSection id="aboutSectionSS1">
 						<blocks>
-							<!-- <goals:GoalsBlock id="goalsblock"/> -->
+							<about:aboutBlock id="aboutblock"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection titleUppercase="false" id="personalSection" title="Personal" importance="Medium">
+			<ObjectPageSection titleUppercase="false" id="educationSection" title="Education" importance="Medium">
 				<subSections>
-					<ObjectPageSubSection id="personalSectionSS1" title="Connect" titleUppercase="false">
+					<ObjectPageSubSection id="educationSectionSS1" title="High school" titleUppercase="false">
 						<blocks>
-							<!-- <personal:BlockPhoneNumber id="phone"/>
-							<personal:BlockSocial id="social"/>
-							<personal:BlockAdresses id="adresses"/>
-							<personal:BlockMailing id="mailing" columnLayout="1"/> -->
+							<education:educationBlock id="educationblock"/>
 						</blocks>
 					</ObjectPageSubSection>
 
-					<ObjectPageSubSection id="personalSectionSS2" title="Payment information" titleUppercase="false">
+					<ObjectPageSubSection id="educationSectionSS2" title="University" titleUppercase="false">
 						<blocks>
-							<!-- <personal:PersonalBlockPart1 id="part1" columnLayout="1"/> -->
+							<education:educationBlock id="educationblock2"/>
 						</blocks>
-						<moreBlocks>
-							<!-- <personal:PersonalBlockPart2 id="part2" columnLayout="1"/> -->
-						</moreBlocks>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
