@@ -1,40 +1,165 @@
 <mvc:View
-	controllerName="Quickstart.App"
+	controllerName="GOTO.App"
 	displayBlock="true"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:l="sap.ui.layout"
-	xmlns:core="sap.ui.core"
-	xmlns:tnt="sap.tnt"
-	xmlns="sap.m">
-	<App id="app">
-		<Page title="Create Enterprise-ready Web Apps with Ease">
-			<l:BlockLayout background="Light">
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<core:Icon color="#1873B4" src="sap-icon://sap-ui5" size="5rem" class="sapUiSmallMarginBottom" width="100%"/>
-						<Title level="H1" titleStyle="H1" text="This is UI5!" width="100%" textAlign="Center"/>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<FlexBox items="{/features}" justifyContent="Center" wrap="Wrap" class="sapUiSmallMarginBottom">
-							<tnt:InfoLabel text="{}" class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
-						</FlexBox>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
+	xmlns="sap.uxap"
+	xmlns:layout="sap.ui.layout"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core">
+	<m:App id="app">
+		<m:Page title="Welcome to My Personal UI5 Page">
+			
+	<ObjectPageLayout id="ObjectPageLayout"
+		showTitleInHeaderContent="true"
+		showEditHeaderButton="true"
+		editHeaderButtonPress="handleEditBtnPress"
+		upperCaseAnchorBar="false">
+		
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
 
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<Panel headerText="Are you ready?" expandable="true">
-							<Switch change=".onChange" customTextOn="yes" customTextOff="no"/>
-							<l:HorizontalLayout id="ready" visible="false" class="sapUiSmallMargin">
-								<Text text="Ok, let's get you started!" class="sapUiTinyMarginEnd"/>
-								<Link text="Learn more" href="https://openui5.hana.ondemand.com/"/>
-							</l:HorizontalLayout>
-						</Panel>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-			</l:BlockLayout>
-		</Page>
-	</App>
+				<!-- Header -->
+				<expandedHeading>
+					<m:HBox>
+						<m:Title text="Törehan Gören" wrapping="true"/>
+					</m:HBox>
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:FlexBox  fitContainer="true" alignItems="Center">
+						<m:Avatar src="./goto.jpeg" class="sapUiTinyMarginEnd"/>
+						<m:Title text="Törehan Gören" wrapping="true"/>
+					</m:FlexBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Text text="Senior UI5 and ABAP Developer"/>
+				</expandedContent>
+
+				<snappedContent>
+					<m:Text text="Senior UI5 and ABAP Developer"/>
+				</snappedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title text="Senior UI5 and ABAP Developer"/>
+				</snappedTitleOnMobile>
+
+				<actions>
+					<m:Button icon="sap-icon://pull-down"  text="Download" press="toggleFooter"  tooltip="Download as Word Document"/>
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+				<!-- Content of Header Area -->
+		
+		<headerContent>
+			<m:FlexBox wrap="Wrap">
+				<m:Avatar class="sapUiSmallMarginEnd" src="./goto.jpeg"  displaySize="L" />
+
+					<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+						<m:Link text="+33 6 4512 5158"/>
+						<m:Link text="DeniseSmith@sap.com"/>
+					</layout:VerticalLayout>
+
+					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+						<m:Image src="./test-resources/sap/uxap/images/linkedin.png"/>
+						<m:Image src="./test-resources/sap/uxap/images/Twitter.png" class="sapUiSmallMarginBegin"/>
+					</layout:HorizontalLayout>
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Label text="Hello! I am Denise and I use UxAP"/>
+					<m:VBox>
+						<m:Label text="Achieved goals"/>
+						<m:ProgressIndicator percentValue="30" displayValue="30%"/>
+					</m:VBox>
+				</layout:VerticalLayout>
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Label text="San Jose, USA"/>
+				</layout:VerticalLayout>
+			</m:FlexBox>
+		</headerContent>
+
+				<!-- TAB's -->
+
+		
+		<sections>
+			<ObjectPageSection titleUppercase="false" id="goalsSection" title="2014 Goals Plan">
+				<subSections>
+					<ObjectPageSubSection id="goalsSectionSS1">
+						<blocks>
+							<!-- <goals:GoalsBlock id="goalsblock"/> -->
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" id="personalSection" title="Personal" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS1" title="Connect" titleUppercase="false">
+						<blocks>
+							<!-- <personal:BlockPhoneNumber id="phone"/>
+							<personal:BlockSocial id="social"/>
+							<personal:BlockAdresses id="adresses"/>
+							<personal:BlockMailing id="mailing" columnLayout="1"/> -->
+						</blocks>
+					</ObjectPageSubSection>
+
+					<ObjectPageSubSection id="personalSectionSS2" title="Payment information" titleUppercase="false">
+						<blocks>
+							<!-- <personal:PersonalBlockPart1 id="part1" columnLayout="1"/> -->
+						</blocks>
+						<moreBlocks>
+							<!-- <personal:PersonalBlockPart2 id="part2" columnLayout="1"/> -->
+						</moreBlocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" id="employmentSection" title="Employment">
+				<subSections>
+					<ObjectPageSubSection id="employmentSectionSS1" title="Job information" titleUppercase="false">
+						<blocks>
+							<!-- <employment:BlockJobInfoPart1 id="jobinfopart1"/>
+							<employment:BlockJobInfoPart2 id="jobinfopart2"/>
+							<employment:BlockJobInfoPart3 id="jobinfopart3"/> -->
+						</blocks>
+					</ObjectPageSubSection>
+
+					<ObjectPageSubSection id="employmentSectionSS2" title="Employee Details" importance="Medium" titleUppercase="false">
+						<blocks>
+							<!-- <employment:BlockEmpDetailPart1 id="empdetailpart1" columnLayout="1"/> -->
+						</blocks>
+						<moreBlocks>
+							<!-- <employment:BlockEmpDetailPart2 id="empdetailpart2" columnLayout="1"/>
+							<employment:BlockEmpDetailPart3 id="empdetailpart3" columnLayout="1"/> -->
+						</moreBlocks>
+					</ObjectPageSubSection>
+
+					<ObjectPageSubSection id="employmentSectionSS3" title="Job Relationship" importance="Low" titleUppercase="false">
+						<blocks>
+							<!-- <employment:EmploymentBlockJob id="employmentblockjob" showSubSectionMore="true">
+								<employment:mappings>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp1"
+												  externalPath="/Employee/0"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp2"
+												  externalPath="/Employee/1"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp3"
+												  externalPath="/Employee/2"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp4"
+												  externalPath="/Employee/3"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp5"
+												  externalPath="/Employee/4"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp6"
+												  externalPath="/Employee/5"/>
+								</employment:mappings>
+							</employment:EmploymentBlockJob> -->
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+		</m:Page>
+	</m:App>
 </mvc:View>

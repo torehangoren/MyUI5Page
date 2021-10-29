@@ -2,19 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Quickstart</title>
+    <title>Törehan Gören's CV</title>
     <script
       id="sap-ui-bootstrap"
       src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-      data-sap-ui-theme="sap_belize"
-      data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-      data-sap-ui-resourceroots='{"Quickstart": "./"}'
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-libs="sap.m, sap.ui.layout, sap.uxap"
+      data-sap-ui-resourceroots='{"GOTO": "./"}'
       data-sap-ui-async="true"
     ></script>
     <script>
       sap.ui.getCore().attachInit(function () {
         sap.ui.require(["sap/ui/core/mvc/XMLView"], function (XMLView) {
-          XMLView.create({ viewName: "Quickstart.App" }).then(function (oView) {
+          XMLView.create({ viewName: "GOTO.App" }).then(function (oView) {
             oView.placeAt("content");
           });
         });
