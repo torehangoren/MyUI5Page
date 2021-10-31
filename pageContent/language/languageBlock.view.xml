@@ -4,7 +4,7 @@
 	xmlns:card="sap.f.cards"
 	xmlns:time="sap.ui.webc.fiori">
 
-	<f:Card class="sapUiMediumMargin" width="auto">
+	<!-- <f:Card class="sapUiMediumMargin" width="auto">
 		<f:header>
 			<card:Header title="University" iconSrc="sap-icon://study-leave" />
 		</f:header>
@@ -21,5 +21,7 @@
 			</time:TimelineItem>
 			</time:Timeline>
 		</f:content>
-	</f:Card>
+	</f:Card> -->
+
+	<!-- <RatingIndicator id="RI_S" maxValue="5" class="sapUiSmallMarginBottom" value="4" iconSize="16px" tooltip="Rating Tooltip" /> -->
 </mvc:View>

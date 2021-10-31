@@ -1,8 +1,9 @@
 sap.ui.define(
   ["sap/ui/core/mvc/Controller",
    "sap/ui/model/json/JSONModel",
-	 "sap/m/PDFViewer"],
-  function (Controller, JSONModel, PDFViewer) {
+	 "sap/m/PDFViewer",
+   "sap/m/library"],
+  function (Controller, JSONModel, PDFViewer, mobileLibrary) {
     "use strict";
     return Controller.extend("GOTO.App", {
 
@@ -19,6 +20,9 @@ sap.ui.define(
       onInit: function () {
         this._myCVpdfViewer = new PDFViewer();
         this.getView().addDependent(this._myCVpdfViewer);
+        sap.ui.getCore().getConfiguration().setLanguage("EN");
+//////
+
       },
 
       onPressLinkedinIcon: function () {
@@ -37,8 +41,14 @@ sap.ui.define(
         this._myCVpdfViewer.setSource(this._CVdocumentLocation);
 			this._myCVpdfViewer.setTitle("My CV as Pdf");
 			this._myCVpdfViewer.open();
-      }
-    
+      },
+
+      onPressEmail: function (evt) {
+        mobileLibrary.URLHelper.triggerEmail(evt.getSource().getText(), "New Job opportunity", "Hi Törehan,", false, false, true);
+		},
+      onPressTel: function (evt) {
+      mobileLibrary.URLHelper.triggerTel(evt.getSource().getText());
+  }
     });
   }
 );

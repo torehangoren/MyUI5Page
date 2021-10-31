@@ -7,7 +7,8 @@
 	xmlns:m="sap.m"
 	xmlns:core="sap.ui.core"
 	xmlns:about="GOTO.pageContent.about"
-	xmlns:education="GOTO.pageContent.education">
+	xmlns:education="GOTO.pageContent.education"
+	xmlns:language="GOTO.pageContent.language">
 	<m:App id="app">
 		<m:Page title="Welcome to My Personal UI5 Page">
 			
@@ -59,8 +60,8 @@
 				<m:Avatar class="sapUiSmallMarginEnd" src="./images/ben.jpeg"  displaySize="L" />
 
 					<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-						<m:Link text="+43 664 345 90 27"/>
-						<m:Link text="torehangoren@torehangoren.com"/>
+						<m:Link text="+43 664 345 90 27" press="onPressTel"/>
+						<m:Link text="torehangoren@torehangoren.com" press="onPressEmail"/>
 					</layout:VerticalLayout>
 
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
@@ -94,58 +95,25 @@
 
 			<ObjectPageSection titleUppercase="false" id="educationSection" title="Education" importance="Medium">
 				<subSections>
-					<ObjectPageSubSection id="educationSectionSS1" title="High school" titleUppercase="false">
+					<ObjectPageSubSection id="educationSectionSS1"  showTitle="false" title="University" titleUppercase="false">
 						<blocks>
 							<education:educationBlock id="educationblock"/>
 						</blocks>
 					</ObjectPageSubSection>
 
-					<ObjectPageSubSection id="educationSectionSS2" title="University" titleUppercase="false">
+					<ObjectPageSubSection id="educationSectionSS2" showTitle="false" title="High school" titleUppercase="false">
 						<blocks>
-							<education:educationBlock id="educationblock2"/>
+							<education:educationHighSchoolBlock id="educationblock2"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection titleUppercase="false" id="employmentSection" title="Employment">
+			<ObjectPageSection titleUppercase="false" id="LanguageSection" title="Language">
 				<subSections>
-					<ObjectPageSubSection id="employmentSectionSS1" title="Job information" titleUppercase="false">
+					<ObjectPageSubSection id="LanguageSectionSS1" title="Language skills" titleUppercase="false">
 						<blocks>
-							<!-- <employment:BlockJobInfoPart1 id="jobinfopart1"/>
-							<employment:BlockJobInfoPart2 id="jobinfopart2"/>
-							<employment:BlockJobInfoPart3 id="jobinfopart3"/> -->
-						</blocks>
-					</ObjectPageSubSection>
-
-					<ObjectPageSubSection id="employmentSectionSS2" title="Employee Details" importance="Medium" titleUppercase="false">
-						<blocks>
-							<!-- <employment:BlockEmpDetailPart1 id="empdetailpart1" columnLayout="1"/> -->
-						</blocks>
-						<moreBlocks>
-							<!-- <employment:BlockEmpDetailPart2 id="empdetailpart2" columnLayout="1"/>
-							<employment:BlockEmpDetailPart3 id="empdetailpart3" columnLayout="1"/> -->
-						</moreBlocks>
-					</ObjectPageSubSection>
-
-					<ObjectPageSubSection id="employmentSectionSS3" title="Job Relationship" importance="Low" titleUppercase="false">
-						<blocks>
-							<!-- <employment:EmploymentBlockJob id="employmentblockjob" showSubSectionMore="true">
-								<employment:mappings>
-									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp1"
-												  externalPath="/Employee/0"/>
-									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp2"
-												  externalPath="/Employee/1"/>
-									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp3"
-												  externalPath="/Employee/2"/>
-									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp4"
-												  externalPath="/Employee/3"/>
-									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp5"
-												  externalPath="/Employee/4"/>
-									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp6"
-												  externalPath="/Employee/5"/>
-								</employment:mappings>
-							</employment:EmploymentBlockJob> -->
+							<language:languageBlock id="Languageblock"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
