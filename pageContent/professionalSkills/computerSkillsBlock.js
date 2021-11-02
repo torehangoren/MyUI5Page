@@ -3,15 +3,15 @@ sap.ui.define(["sap/ui/core/library", 'sap/uxap/BlockBase'], function (coreLibra
 
 	var ViewType = coreLibrary.mvc.ViewType;
 
-	var languageBlock = BlockBase.extend("GOTO.pageContent.language.languageBlock", {
+	var computerSkillsBlock = BlockBase.extend("GOTO.pageContent.professionalSkills.computerSkillsBlock", {
 		metadata: {
 			views: {
 				Collapsed: {
-					viewName: "GOTO.pageContent.language.languageBlock",
+					viewName: "GOTO.pageContent.professionalSkills.computerSkillsBlock",
 					type: ViewType.XML
 				},
 				Expanded: {
-					viewName: "GOTO.pageContent.language.languageBlock",
+					viewName: "GOTO.pageContent.professionalSkills.computerSkillsBlock",
 					type: ViewType.XML
 				}
 			},
@@ -19,7 +19,7 @@ sap.ui.define(["sap/ui/core/library", 'sap/uxap/BlockBase'], function (coreLibra
 		}
 		
 	})
-	return languageBlock;
+	return computerSkillsBlock;
 
 	
 });

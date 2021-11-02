@@ -21,7 +21,9 @@ sap.ui.define(
         this._myCVpdfViewer = new PDFViewer();
         this.getView().addDependent(this._myCVpdfViewer);
         sap.ui.getCore().getConfiguration().setLanguage("EN");
-//////
+
+			var oModel = new JSONModel("./pageContent/content.json");
+			this.getView().setModel(oModel);
 
       },
 
@@ -48,6 +50,9 @@ sap.ui.define(
 		},
       onPressTel: function (evt) {
       mobileLibrary.URLHelper.triggerTel(evt.getSource().getText());
+  },
+  onPressTEST: function(oEvent){
+    debugger;
   }
     });
   }
