@@ -16,6 +16,7 @@ sap.ui.define(
     _myXingLink: "https://www.xing.com/profile/Toerehan_Goeren",
     _myTwitterLink: "https://twitter.com/torehangoren",
     _myInstagramLink: "https://www.instagram.com/torehangoren/",
+    _mySapLink: "https://people.sap.com/torehan_goren",
       
       onInit: function () {
         this._myCVpdfViewer = new PDFViewer();
@@ -38,6 +39,9 @@ sap.ui.define(
       },
       onPressInstagramIcon: function() {
         window.open(this._myInstagramLink, '_blank');
+      },
+		onPressSapIcon: function() {
+        window.open(this._mySapLink, '_blank');
       },
       onPressDownloadCV: function() {
         this._myCVpdfViewer.setSource(this._CVdocumentLocation);

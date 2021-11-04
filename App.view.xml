@@ -31,7 +31,7 @@
 
 				<snappedHeading>
 					<m:FlexBox  fitContainer="true" alignItems="Center">
-						<m:Avatar src="./images/ben.jpeg" class="sapUiTinyMarginEnd"/>
+						<m:Avatar src="./images/goto2.jpg" class="sapUiTinyMarginEnd"/>
 						<m:Title text="Törehan Gören" wrapping="true"/>
 					</m:FlexBox>
 				</snappedHeading>
@@ -59,8 +59,8 @@
 		
 		<headerContent>
 			<m:FlexBox wrap="Wrap">
-				<m:Avatar class="sapUiSmallMarginEnd" src="./images/ben.jpeg"  displaySize="L" />
-
+				<!-- <m:Avatar class="sapUiSmallMarginEnd" src="./images/goto2.jpg"  displaySize="XL" />-->
+			    <m:Image src="./images/goto.jpg" class="myAvatar" height="10rem" />
 					<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
 						<core:Icon src="sap-icon://call" class="sapUiTinyMarginEnd"/>
@@ -70,28 +70,30 @@
 						<core:Icon src="sap-icon://arobase" class="sapUiTinyMarginEnd"/>
 						<m:Link text="torehangoren@torehangoren.com" press="onPressEmail"/>
 					</layout:HorizontalLayout>
+						
+					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+						<core:Icon src="sap-icon://employee-pane" class="sapUiTinyMarginEnd"/>
+					<m:Label text="Hello! I am Törehan"/>
+					</layout:HorizontalLayout>
+					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+						<core:Icon src="sap-icon://map" class="sapUiTinyMarginEnd"/>
+						<m:Label text="Wels, Austria"/>
+					</layout:HorizontalLayout>
 					</layout:VerticalLayout>
+
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					
+
+				</layout:VerticalLayout>
 
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
 						<m:Image src="./images/linkedin.png" press="onPressLinkedinIcon"/>
 						<m:Image src="./images/xing.jpg" class="sapUiSmallMarginBegin" press="onPressXingIcon"/>
 						<m:Image src="./images/twitter.png" class="sapUiSmallMarginBegin" press="onPressTwitterIcon"/>
 						<m:Image src="./images/instagram.png" class="sapUiSmallMarginBegin" press="onPressInstagramIcon"/>
+						<m:Image src="./images/sap.png" class="sapUiSmallMarginBegin" press="onPressSapIcon"/>
 					</layout:HorizontalLayout>
-
-				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
-						<core:Icon src="sap-icon://employee-pane" class="sapUiTinyMarginEnd"/>
-					<m:Label text="Hello! I am Törehan"/>
-					</layout:HorizontalLayout>
-					
-					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
-						<core:Icon src="sap-icon://map" class="sapUiTinyMarginEnd"/>
-						<m:Label text="Wels, Austria"/>
-					</layout:HorizontalLayout>
-
-				</layout:VerticalLayout>
-
 			</m:FlexBox>
 		</headerContent>
 
@@ -115,19 +117,20 @@
 
 			<ObjectPageSection titleUppercase="false" id="educationSection" title="Education" importance="High">
 				<subSections>
-					<ObjectPageSubSection id="educationSectionSS1"  showTitle="false" title="University" titleUppercase="false">
+					<ObjectPageSubSection id="educationSectionSS1"  showTitle="false"  titleUppercase="false">
 						<blocks>
 							<education:educationBlock id="educationblock"/>
+							<!--<education:educationHighSchoolBlock id="educationblock2"/>-->
 						</blocks>
 					</ObjectPageSubSection>
 
-					<ObjectPageSubSection id="educationSectionSS2" showTitle="false" title="High school" titleUppercase="false">
+				<!--	<ObjectPageSubSection id="educationSectionSS2" showTitle="false" title="High school" titleUppercase="false">
 						<blocks>
 							<education:educationHighSchoolBlock id="educationblock2"/>
 						</blocks>
-					</ObjectPageSubSection>
+					</ObjectPageSubSection>-->
 				</subSections>
-			</ObjectPageSection>
+			</ObjectPageSection>  
 
 				<!-- Language TAB -->
 

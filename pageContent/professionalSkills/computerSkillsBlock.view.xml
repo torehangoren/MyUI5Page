@@ -22,7 +22,7 @@
 			<ProgressIndicator
 				class="sapUiSmallMarginBottom"
 				percentValue="{percentValue}"
-				displayValue="{percentValue}"
+				displayValue="{level}"
 				showValue="true"
 				state="Information" />
 					</VBox>

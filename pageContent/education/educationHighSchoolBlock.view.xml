@@ -5,7 +5,7 @@
 	xmlns:card="sap.f.cards"
 	xmlns:time="sap.ui.webc.fiori">
 
-	<f:Card class="sapUiMediumMargin" width="auto">
+	<f:Card class="sapUiTinyMargin" width="auto">
 		<f:header>
 			<card:Header title="High schoool" iconSrc="sap-icon://study-leave" />
 		</f:header>
