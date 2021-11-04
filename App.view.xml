@@ -50,7 +50,6 @@
 
 				<actions>
 					<m:Button icon="sap-icon://pull-down"  text="Download" press="onPressDownloadCV"  tooltip="Download as Word Document"/>
-					<m:Button   text="test" press="onPressTEST"  />
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>

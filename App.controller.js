@@ -54,10 +54,7 @@ sap.ui.define(
 		},
       onPressTel: function (evt) {
       mobileLibrary.URLHelper.triggerTel(evt.getSource().getText());
-  },
-  onPressTEST: function(oEvent){
-    debugger;
-  }
+    }
     });
   }
 );
