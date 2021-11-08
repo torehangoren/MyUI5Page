@@ -1,14 +1,14 @@
 {
 	"languages": [
 	{
-	  "lang": "German",
-	  "niveau": "Fluent",
-	  "FlagPicUrl": "./images/de.png"
-	},
-	{
 	  "lang": "Turkish",
 	  "niveau": "Native",
 	  "FlagPicUrl": "./images/tr.png"
+	},
+	{
+	  "lang": "German",
+	  "niveau": "Fluent",
+	  "FlagPicUrl": "./images/de.png"
 	},
 	{
 	  "lang": "English",
