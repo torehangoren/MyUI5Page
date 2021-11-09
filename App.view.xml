@@ -4,15 +4,15 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.uxap"
 	xmlns:layout="sap.ui.layout"
-	xmlns:m="sap.m"
+	xmlns:m="sap.m" 
 	xmlns:core="sap.ui.core"
 	xmlns:about="GOTO.pageContent.about"
 	xmlns:education="GOTO.pageContent.education"
 	xmlns:language="GOTO.pageContent.language"
 	xmlns:profSkills="GOTO.pageContent.professionalSkills">
 	<m:App id="app">
-		<m:Page title="Welcome to My Personal UI5 Page">
-			
+		<m:Page title="Welcome to My Personal UI5 Page" showHeader="false">
+
 	<ObjectPageLayout id="ObjectPageLayout"
 		showTitleInHeaderContent="true"
 		showEditHeaderButton="true"
@@ -22,7 +22,7 @@
 		<headerTitle>
 			<ObjectPageDynamicHeaderTitle>
 
-				<!-- Header -->
+				<!-- Header --> 
 				<expandedHeading>
 					<m:HBox>
 						<m:Title text="Törehan Gören" wrapping="true"/>
@@ -50,6 +50,15 @@
 
 				<actions>
 					<m:Button icon="sap-icon://pull-down"  text="Download" press="onPressDownloadCV"  tooltip="Download as Word Document"/>
+					
+	<m:MenuButton text="Languages" buttonMode="Split" defaultAction="onFirstActionLangMenu" beforeMenuOpen="onBeforeLangMenuOpen">
+			<m:menu>
+				<m:Menu itemSelected="onLangMenuSelection">
+					<m:MenuItem text="English" icon="./images/en.png" />
+					<m:MenuItem text="Deutsch" icon="./images/de.png" />
+				</m:Menu>
+			</m:menu>
+		</m:MenuButton>
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
@@ -67,7 +76,7 @@
 					</layout:HorizontalLayout>
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
 						<core:Icon src="sap-icon://arobase" class="sapUiTinyMarginEnd"/>
-						<m:Link text="torehangoren@torehangoren.com" press="onPressEmail"/>
+						<m:Link text="contact@torehangoren.com" press="onPressEmail"/>
 					</layout:HorizontalLayout>
 						
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
