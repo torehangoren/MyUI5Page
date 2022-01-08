@@ -6,7 +6,7 @@ sap.ui.define(["sap/ui/core/library", 'sap/uxap/BlockBase'], function (coreLibra
 	var aboutBlock = BlockBase.extend("GOTO.pageContent.about.aboutBlock", {
 		metadata: {
 			views: {
-				Collapsed: {
+				Collapsed: { 
 					viewName: "GOTO.pageContent.about.aboutBlock",
 					type: ViewType.XML
 				},

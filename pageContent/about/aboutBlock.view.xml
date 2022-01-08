@@ -6,16 +6,13 @@
 		<Text
 			id="aboutmetext1"
 			wrappingType="Hyphenated"
-			text="Hereby, I would like to introduce myself to you as an ABAP and Fiori Developer. I have successfully completed my Master of Science degree in Business Information at Marmara 
-		University in Istanbul in February 2019. Currently, I am working at TGW Logistics Group Company in 
-		Austria as an ABAP and Fiori Developer.
-		In my 4 year SAP career, I worked 2 years of it in a consulting company in turkey in the F/CO/RE 
-		modules and until 2019/April. Now I work in Austria in the EWM module as an ABAP/Fiori Developer. 
-		These different environments  where I worked gave me a different perspective, and I was able to 
-		gather work disciplines in different countries.
-		Since there are no ready EWM applications  in Fiori library to meet the needs of our customers,  we designed our custom applications. 
-		Here I voluntarily learned Javascript and I carried out all the planning deveIoping related to fiori alone." />
+			text="You are currently visiting the website of someone who loves his job. As you've visited here, I think you'd like to get to know me. :)" />
 <Text id="aboutmetext2" wrappingType="Hyphenated"
-			text="Let's continue to scroll and discover me :)" />
+			text="I was born in Turkey in 1991, i spent part of my youth in Kiel, Germany. After returning to Turkey, I studied German Language Teaching at the University. 
+			During this time, I decided to concentrate on software development, which I was engaged in as a hobby, and therefore I decided to study Business Informatics at Marmara University Istanbul.
+			While I was doing my Master's in 2016, I got a job as an ABAP Developer. 
+			After successfully completing the university and with the experience I gained as ABAP Developer, I came to Austria.
+			The Job that I started as ABAP Developer at TGW Logistic I am continuing now as Fiori Developer.
+			As I am keen on learning new things, I took over the Fiori development and have designed many different custom screens from zero for EWM so far." />
 	</Panel>
 </mvc:View>

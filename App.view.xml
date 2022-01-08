@@ -81,7 +81,7 @@
 						
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
 						<core:Icon src="sap-icon://employee-pane" class="sapUiTinyMarginEnd"/>
-					<m:Label text="Hello! I am Törehan"/>
+					<m:Label text="Here I am!"/>
 					</layout:HorizontalLayout>
 					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
 						<core:Icon src="sap-icon://map" class="sapUiTinyMarginEnd"/>
