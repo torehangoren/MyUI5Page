@@ -50,15 +50,7 @@
 
 				<actions>
 					<m:Button icon="sap-icon://pull-down"  text="Download" press="onPressDownloadCV"  tooltip="Download as Word Document"/>
-					
-	<m:MenuButton text="Languages" buttonMode="Split" defaultAction="onFirstActionLangMenu" beforeMenuOpen="onBeforeLangMenuOpen">
-			<m:menu>
-				<m:Menu itemSelected="onLangMenuSelection">
-					<m:MenuItem text="English" icon="./images/en.png" />
-					<m:MenuItem text="Deutsch" icon="./images/de.png" />
-				</m:Menu>
-			</m:menu>
-		</m:MenuButton>
+				
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
